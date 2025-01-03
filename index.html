@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Futuristic Weather App</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Weather Pulse</h1>
+    <p>"Stay ahead of the weather, wherever you are."</p>
+  </header>
+
+  <main>
+    <section id="search">
+      <input type="text" id="city-input" placeholder="Enter city name" />
+      <button id="search-btn">Search</button>
+    </section>
+
+    <section id="weather-info" class="hidden">
+      <h2 id="city-name"></h2>
+      <div id="details">
+        <p><span id="temperature"></span></p>
+        <p>Condition: <span id="condition"></span></p>
+        <p>Humidity: <span id="humidity"></span></p>
+        <p>Wind Speed: <span id="wind-speed"></span></p>
+      </div>
+    </section>
+
+    <section id="error-message" class="hidden">
+      <p>City not found. Please try again!</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Futuristic Weather App</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
